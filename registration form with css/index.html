@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        
+        .form-container ,.city-container {
+            
+            position: relative; 
+            border: 2px solid black; 
+            padding: 20px;
+            width: 300px;
+            margin: 50px auto; 
+            background-color: rgb(238, 238, 160);
+        }
+        .personal{
+            display: flex;
+            flex-direction: column;
+        }
+        .Gender{
+            display: flexbox;
+            
+            text-align: center;
+        }
+        .city{
+            display: flex;
+            justify-content: center;
+           
+        }
+        .Subscribe{
+            margin: 50px auto; 
+           
+            text-align: center;
+        }
+        .city label,::selection{
+            padding: 10px;
+            
+        }
+        
+        .form-title {
+            position: absolute;
+            top: -12px; 
+            left: 10px;
+            background: rgb(238, 238, 160);
+
+             
+            padding: 0 5px;
+            font-weight: bold;
+        }
+
+       
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+           
+        }
+
+        input, button {
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div class="form-container">
+        
+        <span class="form-title">Personal details</span>
+        
+        
+        <form>
+            <div >
+                <label for="firstname" style="margin: 10px;">First name</label>
+                <input type="text" id="firstname" name="firstname" >
+            </div>
+          
+            <div>
+                <label for="lastname" style="margin: 12px;">Last name</label>
+                <input type="text" id="lastname" name="lastname" >
+            </div>
+            <div>
+                <label for="email" >Email address</label>
+                <input type="email" id="email" name="email" >
+            </div>
+            <div class="Gender">
+                <span>Gender:</span>
+                <input type="radio">
+        <label>Male</label>
+       
+        <input type="radio">
+        <label>Female</label>
+        
+            </div>
+            
+  
+        </form>
+        
+    </div>
+    <div class="city-container">
+        <span class="form-title">City</span>
+        <form>
+            
+            
+            <div class="city" >
+                <label>City</label>
+                <select>
+                <option>Amman</option>
+                <option>Irbid</option>
+                <option>Jerash</option>
+            </select>
+            </div>
+        
+       
+        </form>
+        
+        
+    </div>
+    <div class="Subscribe"><button >Subscribe</button>
+    </div>
+    
+    
+    
+</body>
+</html>
