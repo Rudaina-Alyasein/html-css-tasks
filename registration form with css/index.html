@@ -6,57 +6,17 @@
     <title>document</title>
     <style>
         
-        .form-container ,.city-container {
-            
-            position: relative; 
-            border: 2px solid black; 
-            padding: 20px;
-            width: 300px;
-            margin: 50px auto; 
-            background-color: rgb(238, 238, 160);
-        }
-        .personal{
-            display: flex;
-            flex-direction: column;
-        }
-        .Gender{
-            display: flexbox;
-            
-            text-align: center;
-        }
-        .city{
-            display: flex;
-            justify-content: center;
-           
-        }
+      
+       
+        
+      
         .Subscribe{
             margin: 50px auto; 
            
             text-align: center;
         }
-        .city label,::selection{
-            padding: 10px;
-            
-        }
         
-        .form-title {
-            position: absolute;
-            top: -12px; 
-            left: 10px;
-            background: rgb(238, 238, 160);
-
-             
-            padding: 0 5px;
-            font-weight: bold;
-        }
-
-       
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-           
-        }
+    
 
         input, button {
             padding: 10px;
@@ -65,62 +25,36 @@
     </style>
 </head>
 <body>
-    <h1>Registration Form</h1>
-    <div class="form-container">
-        
-        <span class="form-title">Personal details</span>
-        
-        
-        <form>
-            <div >
-                <label for="firstname" style="margin: 10px;">First name</label>
-                <input type="text" id="firstname" name="firstname" >
-            </div>
-          
-            <div>
-                <label for="lastname" style="margin: 12px;">Last name</label>
-                <input type="text" id="lastname" name="lastname" >
-            </div>
-            <div>
-                <label for="email" >Email address</label>
-                <input type="email" id="email" name="email" >
-            </div>
-            <div class="Gender">
-                <span>Gender:</span>
-                <input type="radio">
-        <label>Male</label>
-       
-        <input type="radio">
-        <label>Female</label>
-        
-            </div>
-            
-  
-        </form>
-        
-    </div>
-    <div class="city-container">
-        <span class="form-title">City</span>
-        <form>
-            
-            
-            <div class="city" >
-                <label>City</label>
-                <select>
-                <option>Amman</option>
-                <option>Irbid</option>
-                <option>Jerash</option>
-            </select>
-            </div>
-        
-       
-        </form>
-        
-        
-    </div>
-    <div class="Subscribe"><button >Subscribe</button>
-    </div>
     
+    <h3>Registration form</h3>
+
+    <form method="post" style="text-align: center; width: 30%; margin-left: auto; margin-right: auto;">
+        <fieldset style="background-color: lightgoldenrodyellow;">
+            <legend style="text-align: left;">Personal details</legend>
+            <label>First Name</label>
+            <input type="text" name="first name" value=""> <br><br>
+            <label>Last Name</label>
+            <input type="text" name="last name" value=""> <br><br>
+            <label>Email Address</label>
+            <input type="email" name="email" value=""> <br><br>
+            <label>Gender</label>
+            <input type="radio" name="male" value="male">
+            <label>Male</label>
+            <input type="radio" name="female" value="female">
+            <label>Female</label>
+        </fieldset>
+
+        <fieldset style="background-color: lightgoldenrodyellow;">
+            <legend style="text-align: left;">City</legend>
+            <label for="city">City</label>
+            <select id="city" name="city">
+                <option value="amman">Amman</option>
+                <option value="irbid">Irbid</option>
+            </select>
+        </fieldset>
+        <br>
+        <input type="submit" value="Subsecribe">
+    </form>
     
     
 </body>
