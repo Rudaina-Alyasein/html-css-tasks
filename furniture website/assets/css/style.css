@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Poppins", Regular;
+  font-weight: 400;
+  font-style: normal;
+  src: url(Poppins\Poppins-Regular.ttf) format('ttf');
+}
+
+.text-content h1{
+  size: 52px;
+  font-family: serif;
+  weight:400;
+}
+      
+body{
+  background-color:#EFF2F1;
+}
+  
+  
+  .testimonials {
+  
+    justify-items: center;
+}
+
+.testimonials .row {
+    align-items: center;
+}
+
+.testimonials h2 {
+    font-family: "Poppins", serif;
+    font-size: 31.73px;
+    font-weight: 600;
+    line-height: 38.27px;
+    margin-bottom: 41.27px;
+}
+
+.testimonials p {
+    font-family: "Inter", serif;
+    font-size: 16.8px;
+    font-weight: 400;
+    line-height: 29.87px;
+    width: 708.4px;
+    text-align: center;
+    color: black;
+}
+
+.testimonials button {
+    width: 54.13px;
+    height: 50.94px;
+    border-radius: 50%;
+    background-color: rgba(106, 106, 106, 10%);
+    color: black;
+}
+
+.testimonials button:hover{
+    background-color: rgba(255, 215, 72, 1);
+}
+
